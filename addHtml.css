@@ -58,4 +58,15 @@
 		.form-style-6 input[type="button"]:hover{
 			background: #2EBC99;
 		}
+		
+		.btn1{
+			border-width: 0;
+			border-radius: 8px;
+			color: #fff;
+			font-size: 15px;
+			width: 130px;
+			height: 35px;
+			background-color: green;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+		}
 	</style>
