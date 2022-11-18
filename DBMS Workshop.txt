@@ -1,0 +1,18 @@
+create  commad with foreign key :
+
+create table department(
+    dId int,
+    dName varchar(50),
+    dAdd varchar(50),
+    eId int,
+    PRIMARY KEY(dId),
+    CONSTRAINT fkD FOREIGN KEY(eId) REFERENCES employee(eId) on DELETE CASCADE
+);
+
+Trigger 1:
+
+CREATE TRIGGER `trigger1` AFTER INSERT ON `employee` FOR EACH ROW INSERT INTO trigger_table(eId, eName) VALUES(NEW.eID, NEW.eNAme);
+
+Trigger 2:
+
+INSERT INTO trigger_table(eId, eName) VALUES(NEW.eID, NEW.eNAme);
